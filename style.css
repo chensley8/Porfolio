@@ -1,0 +1,328 @@
+:root{
+    --background-color: #f7fff7;
+    --color: #10535c;
+    --background-color-nav: #ff6b6b;
+    --hover-bg-color: #832222;
+    --image-bg-color: #ffe66d;
+    --line-color: #4ecdc4;
+}
+
+* {
+    background-color: var(--background-color);
+    color: var(--color);
+}
+
+h1 {
+    text-align: center;
+    font-size: 4vw;
+}
+
+h3 {
+    margin-left: 3%;
+    font-size: 3vw;
+}
+
+h4 {
+    font-size: 2.5vw;
+    text-align: center;
+    background-color: #ffe66d;
+}
+h3:after {
+    content:' ';
+    display:block;
+    border:2px solid var(--line-color);
+}
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 30px;
+    margin-right: 5%;
+    
+}
+
+#section1-about {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bridget {
+    display: flex;
+    width: 20%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+#section1-about p {
+    display: flex;
+    height: fit-content;
+    font-size: 1.5vw;
+    padding: 2%;
+}
+
+.imagebig {
+    /* display: flex;
+    justify-content: flex-end; */
+    align-items: center;
+    background-color: var(--image-bg-color);
+    padding: 20px;
+    width: 70%;
+    /* height: 70%; */
+    border: 3px solid black;
+    border-radius: 25px;
+    opacity: 0.7;
+}
+.image {
+    background-color: var(--image-bg-color);
+    padding: 2%;
+    width: 35%;
+    /* height: 70%; */
+    border: 3px solid black;
+    border-radius: 25px;
+    opacity: 0.7;
+    margin: 3%;
+}
+
+.bigimg {
+    align-items: center;
+    background-color: var(--image-bg-color);
+    padding: 2%;
+    width: 96%;
+    /* height: 31%; */
+    opacity: 0.7;
+}
+
+.imagebig:hover {
+    transform: scale(1.02);
+    opacity: 1
+}
+
+.image:hover {
+    transform: scale(1.02);
+    opacity: 1
+}
+  
+  .image img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--background-color-nav);
+  }
+  
+  .navlink {
+    float: left;
+    background-color: var(--background-color-nav);
+  }
+
+  .navlink a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: var(--background-color-nav);
+  }
+
+  .navlink a:hover {
+    background-color: var(--hover-bg-color);
+    color: white;
+  }
+
+  .bodyofwork {
+   /*position: absolute;
+    top: 25%;
+    left: 3%;*/
+    transform: translateY(-50%);
+    font-size: 3vw;
+    margin-bottom: 0;
+ }
+
+ .aboutme {
+   /* position: absolute;
+    top: 14%;
+    left: 3%; */
+    /* transform: translateY(-50%); */
+    font-size: 3vw;
+    width: 100%;
+ }
+
+.section1p {
+    flex: 1;
+    order: 1;
+    margin-left: 3%;
+    margin-right: 5%;
+    background-color: var(--image-bg-color);
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+.bottomimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+.contactrow{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+}
+
+.contactrow a {
+    font-weight: 700;
+    font-size: 1.68vw;
+}
+
+.contactrow a:hover {
+    cursor: pointer;
+
+}
+
+.section3-contact ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--background-color-nav);
+}
+.section3-contact li {
+    float:none;
+}
+footer p {
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: blue;
+    text-align: center;
+    color: #f7fff7;
+}
+
+
+
+/*
+1. How do i fill in the nav bars and images with the proper colors and not the generic background colors
+2. how do I make the titles responsive and make sure they are positioned properly
+3. how do I get the footer to stay at the bottom of the page
+4. How do I add a line in on the side that borders each section similar to the example
+5. how do I get the intro P in line with the images
+6. how do I add an avatar/picture and keep in in the proper place
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: red
+}
+#section2-work {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end; 
+    align-items: right;
+    margin: 0 -10px; 
+    gap: 1em;
+
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+.image-container a {
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+.item1 {
+    flex: 1 0 200px;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+*/
+
+/*
+.image-container a:first-child {
+    flex: 2 0 50%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.image-container a:not(:first-child) {
+    flex: 1 0 20%;
+}
+
+.sidebar {
+    flex: 1 0 10%;
+    background-color: grey;
+}
+
+.image-container p {
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .image-container{
+        flex-basis: auto
+    }
+}
+*/
